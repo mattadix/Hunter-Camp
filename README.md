@@ -1,2 +1,155 @@
-# Hunter-Camp
-Hunter Kemping
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hunter Camp</title>
+  <style>
+    /* Celý web - čierno-biely s jemným galaxy gradientom */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at 20% 20%, #111 0%, #000 100%);
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    /* Navigácia */
+    header {
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(10px);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    }
+    header nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    header nav a::after {
+      content: '';
+      display: block;
+      height: 2px;
+      background: #00aaff;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+      transform-origin: center;
+      margin-top: 4px;
+    }
+    header nav a:hover {
+      color: #00aaff;
+    }
+    header nav a:hover::after {
+      transform: scaleX(1);
+    }
+
+    /* Logo */
+    .logo {
+      max-width: 220px;
+      height: auto;
+      filter: drop-shadow(0 0 15px rgba(255,255,255,0.3));
+      margin-top: 50px;
+    }
+
+    /* Hlavný text */
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-top: 20px;
+      color: #00aaff;
+      text-shadow: 0 0 15px rgba(0,170,255,0.5);
+    }
+    p {
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: #b0cfff;
+      max-width: 700px;
+      margin: 10px auto;
+      line-height: 1.6;
+    }
+
+    /* Modrý odkaz */
+    .blue-link {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: linear-gradient(90deg, #007bff, #00aaff);
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 20px rgba(0,170,255,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .blue-link:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 25px rgba(0,170,255,0.6);
+    }
+
+    /* Päta */
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      font-size: 14px;
+      color: #888;
+    }
+
+    /* Animované hviezdy na pozadí */
+    .stars {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: transparent url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+      animation: moveStars 60s linear infinite;
+      opacity: 0.2;
+    }
+    @keyframes moveStars {
+      from { background-position: 0 0; }
+      to { background-position: 10000px 10000px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+
+  <header>
+    <nav>
+      <a href="kontakty.html">Kontakty</a>
+      <a href="vedenie.html">Vedenie</a>
+      <a href="nabor.html">Nábor</a>
+      <a href="lokacia.html">Lokácia</a>
+    </nav>
+  </header>
+
+  <!-- Logo -->
+  <img src="hunter_camp_logo.png" alt="Hunter Camp logo" class="logo" />
+
+  <h1>Hunter Camp</h1>
+  <p>Kemp založený od roku 2024</p>
+  <p>Založil ho Alfred Doležal</p>
+  <p>Najbezpečnejší kemp v Bratislave</p>
+  <p>Nábor stále prebieha</p>
+  
+  <a href="https://discord.gg/QN2VdDax" target="_blank" class="blue-link">
+    Objednávky v aplikácii
+  </a>
+
+  <footer>
+    Web spracoval: Matúš Horváth (Mattad)
+  </footer>
+</body>
+</html>
