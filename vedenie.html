@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vedenie - Hunter Camp</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at 20% 20%, #111 0%, #000 100%);
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    /* Hviezdne pozadie */
+    .stars {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: transparent url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+      animation: moveStars 60s linear infinite;
+      opacity: 0.2;
+    }
+    @keyframes moveStars {
+      from { background-position: 0 0; }
+      to { background-position: 10000px 10000px; }
+    }
+
+    /* Navigácia */
+    header {
+      background: rgba(0, 0, 0, 0.85);
+      backdrop-filter: blur(10px);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    }
+    header a {
+      padding: 10px 20px;
+      border-radius: 25px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 1px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    header a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 15px rgba(255,255,255,0.4);
+    }
+    .btn-domov    { background: linear-gradient(90deg, #ff8c00, #ff5500); }
+    .btn-kontakty { background: linear-gradient(90deg, #ff4b2b, #ff416c); }
+    .btn-vedenie  { background: linear-gradient(90deg, #1e3c72, #2a5298); }
+    .btn-nabor    { background: linear-gradient(90deg, #00b09b, #96c93d); }
+    .btn-lokacia  { background: linear-gradient(90deg, #8e2de2, #4a00e0); }
+
+    /* Obsah */
+    h1 {
+      font-size: 2.5rem;
+      color: #00aaff;
+      margin-top: 30px;
+      text-shadow: 0 0 15px rgba(0,170,255,0.5);
+    }
+    .leader {
+      background: rgba(255,255,255,0.05);
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 600px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+    .leader img {
+      max-width: 200px;
+      border-radius: 50%;
+      border: 3px solid #00aaff;
+      box-shadow: 0 0 15px rgba(0,170,255,0.5);
+      margin-bottom: 10px;
+    }
+    .leader h2 {
+      margin: 10px 0 5px 0;
+      color: #00aaff;
+    }
+    .leader p {
+      margin: 0;
+      color: #b0cfff;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 20px;
+      background: rgba(255,255,255,0.05);
+      font-size: 14px;
+      color: #888;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+
+  <!-- Navigácia -->
+  <header>
+    <a href="main.html" class="btn-domov">Domov</a>
+    <a href="kontakty.html" class="btn-kontakty">Kontakty</a>
+    <a href="vedenie.html" class="btn-vedenie">Vedenie</a>
+    <a href="nabor.html" class="btn-nabor">Nábor</a>
+    <a href="lokacia.html" class="btn-lokacia">Lokácia</a>
+  </header>
+
+  <h1>Vedenie</h1>
+
+  <!-- 1. Osoba -->
+  <div class="leader">
+    <!-- Tu pridáš fotku takto:
+         1. Stiahni fotku z internetu alebo si priprav svoju.
+         2. Pomenuj ju napr. matus.jpg
+         3. Ulož ju do rovnakého priečinka ako vedenie.html
+         4. Do src="" napíš názov súboru, napr.: src="matus.jpg"
+    -->
+    <img src="matus.jpg" alt="Matúš Horváth">
+    <h2>Matúš Horváth</h2>
+    <p>Riaditeľ Kempingu</p>
+  </div>
+
+  <!-- 2. Osoba -->
+  <div class="leader">
+    <img src="tommy.jpg" alt="Tommy Brock">
+    <h2>Tommy Brock</h2>
+    <p>Zástupca riaditeľa</p>
+  </div>
+
+  <footer>
+    Web spracoval: Matúš Horváth (Mattad)
+  </footer>
+</body>
+</html>
