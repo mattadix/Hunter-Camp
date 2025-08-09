@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Hunter Camp</title>
   <style>
-    /* Font a základ */
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
@@ -14,8 +13,6 @@
       text-align: center;
       overflow-x: hidden;
     }
-
-    /* Animované hviezdy */
     .stars {
       position: fixed;
       top: 0;
@@ -31,8 +28,6 @@
       from { background-position: 0 0; }
       to { background-position: 10000px 10000px; }
     }
-
-    /* Navigačné tlačidlá hore vedľa seba */
     header {
       background: rgba(0, 0, 0, 0.85);
       backdrop-filter: blur(10px);
@@ -58,21 +53,16 @@
       transform: translateY(-3px);
       box-shadow: 0 4px 15px rgba(255,255,255,0.4);
     }
-    /* Každé tlačidlo inou farbou */
     .btn-kontakty { background: linear-gradient(90deg, #ff4b2b, #ff416c); }
     .btn-vedenie { background: linear-gradient(90deg, #1e3c72, #2a5298); }
     .btn-nabor   { background: linear-gradient(90deg, #00b09b, #96c93d); }
     .btn-lokacia { background: linear-gradient(90deg, #8e2de2, #4a00e0); }
-
-    /* Logo */
     .logo {
       max-width: 220px;
       height: auto;
       filter: drop-shadow(0 0 15px rgba(255,255,255,0.3));
       margin-top: 50px;
     }
-
-    /* Hlavný text */
     h1 {
       font-size: 3rem;
       font-weight: 700;
@@ -88,8 +78,6 @@
       margin: 10px auto;
       line-height: 1.6;
     }
-
-    /* Modrý odkaz */
     .blue-link {
       display: inline-block;
       margin-top: 20px;
@@ -107,8 +95,13 @@
       transform: translateY(-3px);
       box-shadow: 0 6px 25px rgba(0,170,255,0.6);
     }
-
-    /* Päta */
+    .camp-photo {
+      margin-top: 30px;
+      max-width: 90%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,170,255,0.5);
+    }
     footer {
       margin-top: 60px;
       padding: 20px;
@@ -121,7 +114,6 @@
 <body>
   <div class="stars"></div>
 
-  <!-- Navigácia -->
   <header>
     <a href="kontakty.html" class="btn-kontakty">Kontakty</a>
     <a href="vedenie.html" class="btn-vedenie">Vedenie</a>
@@ -129,7 +121,6 @@
     <a href="lokacia.html" class="btn-lokacia">Lokácia</a>
   </header>
 
-  <!-- Logo -->
   <img src="hunter_camp_logo.png" alt="Hunter Camp logo" class="logo" />
 
   <h1>Hunter Camp</h1>
@@ -141,6 +132,9 @@
   <a href="https://discord.gg/QN2VdDax" target="_blank" class="blue-link">
     Objednávky v aplikácii
   </a>
+
+  <!-- Fotka kempu -->
+  <img src="https://cdn.discordapp.com/attachments/1292911913079935038/1403744296087322674/IMG_4554.png?ex=6898aa40&is=689758c0&hm=76638790c21e077b435e135560a49ea994c17277727632ad4e50e5ac27d46bfc&" alt="Hunter Camp" class="camp-photo" />
 
   <footer>
     Web spracoval: Matúš Horváth (Mattad)
