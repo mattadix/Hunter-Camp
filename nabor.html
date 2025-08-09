@@ -1,1 +1,135 @@
-..
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nábor - Hunter Camp</title>
+<style>
+  body {
+    margin: 0;
+    background: radial-gradient(circle at top, #000000, #0b1d3a 80%);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Navigácia */
+  header {
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 15px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    z-index: 100;
+  }
+  header a {
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  header a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(255,255,255,0.4);
+  }
+  .btn-domov    { background: linear-gradient(90deg, #ff8000, #ff5500); }
+  .btn-kontakty { background: linear-gradient(90deg, #ff4b2b, #ff416c); }
+  .btn-vedenie  { background: linear-gradient(90deg, #1e3c72, #2a5298); }
+  .btn-nabor    { background: linear-gradient(90deg, #00b09b, #96c93d); }
+  .btn-lokacia  { background: linear-gradient(90deg, #8e2de2, #4a00e0); }
+
+  /* Obsah */
+  main {
+    max-width: 800px;
+    padding: 30px;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    text-shadow: 0 0 15px #66b3ff;
+  }
+  h2 {
+    font-size: 1.8em;
+    margin-top: 5px;
+    color: #66b3ff;
+    text-shadow: 0 0 8px #3399ff;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 1.2em;
+  }
+  ul li {
+    margin: 8px 0;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px;
+    border-radius: 10px;
+    transition: background 0.3s;
+  }
+  ul li:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+  p {
+    font-size: 1.1em;
+    margin-top: 20px;
+    line-height: 1.6em;
+  }
+  .link-zaujem {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: #3399ff;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+  }
+  .link-zaujem:hover {
+    background: #1a73e8;
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="main.html" class="btn-domov">Domov</a>
+  <a href="kontakty.html" class="btn-kontakty">Kontakty</a>
+  <a href="vedenie.html" class="btn-vedenie">Vedenie</a>
+  <a href="nabor.html" class="btn-nabor">Nábor</a>
+  <a href="lokacia.html" class="btn-lokacia">Lokácia</a>
+</header>
+
+<main>
+  <h1>Hunter Camp s.r.o</h1>
+  <h2>Máme nábor!</h2>
+
+  <p><strong>Ponúkame:</strong></p>
+  <ul>
+    <li>Služobné vozy (moderné)</li>
+    <li>Služobné zbrane (nové)</li>
+    <li>Skvelý kolektív</li>
+  </ul>
+
+  <p><strong>Pozície:</strong> Security, RRT (niečo ako PPU, nie sme POLÍCIA – bude vysvetlené na nábore),  
+  Animátor v kempe, Koordinátor pre evakuáciu, Taxi</p>
+
+  <p><em>Bohužiaľ sme bez výplaty, ale je tu mnoho lepšie ako iné práce.</em></p>
+
+  <a class="link-zaujem" href="https://discord.gg/T5Y7nA2H" target="_blank">Mám záujem</a>
+</main>
+
+</body>
+</html>
